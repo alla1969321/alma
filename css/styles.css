@@ -82,4 +82,120 @@
   }
   .header-navigation {
   }
+menu list
+menu-item
+.menu-link {
+  position: relative;
+  display: block;
+  color: var(--Dark-NAVY-BLUE);
+   padding-top: 24px;
+    padding-bottom: 24px;
+   font-weight: 500;
+   text-decoration: none;
+  letter-spacing: 0.02em;
+    font-size: 16px;
+    line-height: 1.5;
+    
+        transition: color var(--transition);
+   }
+  .menu-link:hover,
+.menu-link:focus {
+  color: var(--Pressed-State-OCEAN);
+}
+.current {
+  color: var(--Pressed-State-OCEAN);
+}
+.contact-info .link:hover,
+.contact-info .link:focus {
+  color: var(--Pressed-State-OCEAN);
+}
+.contact-link  {
+  color: var(--Dark-NAVY-BLUE);
+  transition: color var(--transition);
+    font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  font-style: normal;
 
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
+}
+
+.contacts {
+  font-style: normal;
+  margin-left: auto;
+}
+.contact-info:last-child {
+  margin-right: 0;
+}
+.contact-info {
+  gap: 40px;
+}
+.page-header {
+  border-top: none;
+  border-bottom: 1px solid var(--Accent-CORNFLOWER);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.address-info {
+  color: var(--Text-SLATE);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.address-item {
+  display: flex;
+}
+/* main container settings  */
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+ .modal-header {
+   display: block;
+   margin-bottom: 16px;
+   color: var(--Dark-NAVY-BLUE);
+   text-align: center;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+  }
+
+/* modal window */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ background-color: rgba(46, 47, 66, 0.4);
+ transition: opacity var(--transition), visibility var(--transition);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--modal-background-DIARY);
+  border-radius: 4px;
+   width: 408px;
+   padding: 24px;
+   padding-top: 72px;
+}
