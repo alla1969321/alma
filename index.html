@@ -1,144 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ALMA</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet">
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="icon"
+      type="image/svg"
+      sizes="32x32"
+      href="./images/favicon/logo.svg"
+    />
   </head>
   <body>
-    <title>ALMA</title>
-  </head>
-  <body>
-    <!-- header-container -->
-
-    <header class="main-header">
-      <div class="container nav-container">
-       
-          <a class="logotype link" href="./index.html"
-            ><span class="logo">alma</span></a
-          > 
-        <nav class="header-navigation">
-          <ul class="menu list">
-            <li class="menu-item">
-              <a class="menu-link link active" href="./index.html"> set started</a>
+    <!--Header-->
+    <header class="header">
+      <iv class="header-container container">
+        <a class="header-logo" href="">
+          <img
+            class="logo-img"
+            src="./images/logo.svg"
+            alt="logo"
+            width="76"
+            height="76"
+          />
+        </a>
+        <nav class="header-nav">
+          <ul class="header-list list">
+            <li class="header-item">
+              <a class="header-link current-page link" href="#about">set started</a>
             </li>
-            <li class="menu-item">
-              <a class="menu-link link" href="./portfolio.html">how it works</a>
+            <li class="header-item">
+              <a class="header-link link" href="#Price">how it works</a>
             </li>
-            <li class="menu-item">
-              <a class="menu-link link" href="./">for providers</a>
+            <li class="header-item">
+              <a class="header-link link" href="#Barbers">for providers</a>
             </li>
-            <li class="menu-item">
-              <a class="menu-link link" href="./">About alma</a></li>
+            <li class="header-item">
+              <a class="header-link link" href="#Contacts">About alma</a>
+            </li>
           </ul>
         </nav>
-
-        <button type="button" class="open-mobile-menu-btn js-open-menu" aria-expanded="false">
-          <svg class="burger-icon" width="32" height="22">
-            <use href="./images/svg/icons.svg#burger"></use>
-          </svg>
-        </button>
-
-        <address class="menu-contacts">
-          <ul class="menu-list list">
-            <li class="menu-item">
-              <a class="contacts link" href="FIND A PROVIDER">FIND A PROVIDER</a>
-            </li>
-            <li class="menu-item">
-              <a class="contacts link" href="LOGIN>LOGIN</a>
-            </li>
-              li class="menu-item">
-              <a class="contacts link" href="Find a provider>FIND A PROVIDER</a>
-            </li>  
-          </ul>
-        </address>
-      </div>
-      <div class="mobile-menu js-menu-container">
-        <div class="mobile-menu-container container">
-          <button type="button" class="close-mobile-menu-btn js-close-menu">
-            <svg class="close-mobile-menu-icon" width="8" height="8">
-              <use href="./images/svg/icons.svg#close-btn"></use>
-            </svg>
+         <div class="data-modal-open-wrapper">
+          <button
+            class="light-btn header-btn button"
+            type="button"
+            data-modal-open
+          >
+            LOGIN
           </button>
-
-          <ul class="mobile-menu-list list">
-            <li class="list mobile-menu-item">
-              <a href="./index.html" class="link mobile-menu-text active">Set started</a>
-            </li>
-            <li class="list mobile-menu-item">
-              <a href="./portfolio.html" class="link mobile-menu-text">How it works</a>
-            </li>
-            <li class="list mobile-menu-item">
-              <a href="/" class="link mobile-menu-text">for providers</a>
-            </li>
-            <li class="list mobile-menu-item">
-              <a href="/" class="link mobile-menu-text">About alma</a>
-            </li>
-          </ul>
-
-          <div class="mobile-contacts-container">
-            <ul class="mobile-contacts-list list">
-              <li class="list phone-number-menu-item">
-                <a class="link phone-number-mobile-menu active" href="login"
-                  >login</a
-                >
-              </li>
-              <li class="list email-menu-item">
-                <a class="link email-mobile-menu" href="find a provider"
-                  >find a provider</a
-                >
-              </li>
-            </ul>
-
-
-            <ul class="list social-icon-mobile-menu">
-              <li class="item-icon-menu-mobile">
-                <a class="link social-link-mobile-menu" href="/">
-                  <svg class="social-icon-mobile-menu" width="24" height="24">
-                    <use href="./images/svg/icons.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="item-icon-menu-mobile">
-                <a class="link social-link-mobile-menu" href="/">
-                  <svg class="social-icon-mobile-menu" width="24" height="24">
-                    <use href="./images/svg/icons.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="item-icon-menu-mobile">
-                <a class="link social-link-mobile-menu" href="/">
-                  <svg class="social-icon-mobile-menu" width="24" height="24">
-                    <use href="./images/svg/icons.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="item-icon-menu-mobile">
-                <a class="link social-link-mobile-menu" href="/">
-                  <svg class="social-icon-mobile-menu" width="24" height="24">
-                    <use href="./images/svg/icons.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+        </div>
+         <div class="data-modal-open-wrapper">
+          <button
+            class="light-btn header-btn button"
+            type="button"
+            data-modal-open
+          >
+            FIND a provider
+          </button>
         </div>
       </div>
     </header>
-
-    <!-- main-content -->
-    <main class="main-content">
-      <!-- section-hero -->
-
-     
-      
